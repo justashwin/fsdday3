@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="task.component.css">
+<br>
+<br>
+<div class="proclass">
+<form class="formclass" #addForm (ngSubmit)="task()">
+    <div class="mb-3">
+      <label id="tName" class="form-label">TASK NAME</label>
+      <br>
+      <input type="text"
+      name="tName"
+      [(ngModel)]="tasks.tName"
+             placeholder="TASK NAME" 
+       >
+    </div>
+    <div class="mb-3">
+      <label id="tname"class="form-label">TIME</label>
+      <br>
+      
+      <input type="text"
+      name="tTime"
+    [(ngModel)]="tasks.tTime"
+             placeholder="TIME" >
+    </div>
+    <div class="mb-3">
+        <label id="prname" class="form-label">HOUR</label>
+        <br>
+        <input type="text" 
+        name="tAbc"
+        [(ngModel)]="tasks.tAbc"
+               placeholder="HOUR"
+        >
+
+      </div>
+    <div class="mb-3 form-check">
+      
+    </div>
+    <button id="btn" type="submit" class="btn btn-secondary">Submit</button>
+  </form>
+</div>
